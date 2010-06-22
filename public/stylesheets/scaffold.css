@@ -1,0 +1,91 @@
+body { background-color: #fff; color: #333; }
+
+body, p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a { color: #000; }
+a:visited { color: #666; }
+a:hover { color: #fff; background-color:#000; }
+
+.fieldWithErrors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+
+.popup_block {
+-moz-border-radius:3px;
+-webkit-border-radius: 3px;
+background: #fff;
+padding: 0px 10px;
+float: left;
+padding-left:10px;
+width: 400px;
+position: fixed;
+top: 20%;
+left: 50%;
+margin: 0 0 0 -250px;
+z-index: 100;
+}
+
+.popup_block .popup {
+	float: left;
+	width: 100%;
+	background: #CDECF6;
+	margin: 10px 0;
+	padding: 10px 0;
+
+}
+
+#fade {
+background: #000;
+position: fixed;
+width: 100%;
+height: 100%;
+filter:alpha(opacity=80);
+opacity: .75;
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; /*--IE 8 Transparency--*/
+left: 0;
+top: 0;
+z-index: 10;
+}

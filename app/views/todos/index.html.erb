@@ -1,0 +1,18 @@
+<h1>Listing todos</h1>
+
+<table>
+  <tr id="new_todo_holder">
+    <th>Tasks</th>
+  </tr>
+
+    <% @todos.each do |todo| %>
+	    <%= render :partial => 'todo_row' , :locals => {:todo => todo}%>
+	<% end %>
+
+</table>
+
+<br />
+
+<%= link_to_remote 'New todo', :url => new_todo_url,  :failure => "alert('Hey looks like there was some error! Please try again later. Thanks.')"  %>
+
+<div id="new_todo_popup_holder"></div>

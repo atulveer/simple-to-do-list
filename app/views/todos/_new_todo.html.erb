@@ -1,0 +1,23 @@
+<div id="new_todo_popup_holder">
+<div id="fade" >&nbsp;</div>
+<div  class="popup_block">
+
+  <div class="popup">
+    <h1>New todo</h1>
+
+   <% remote_form_for(@todo) do |f| %>
+   
+      <%= f.error_messages %>
+
+       <p>
+          <%= f.label :task %><br />
+          <%= f.text_field :task %>
+       </p>
+       <p>
+          <%= f.submit 'Create' %> or <%= link_to_function "Cancel", 'hide_popup();'%>
+      </p>
+<% end %>
+
+ </div>
+</div>
+</div>
